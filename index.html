@@ -1157,19 +1157,6 @@
       </div>
 
       <div class="gen-card">
-        <!-- API Key -->
-        <div class="api-key-section">
-          <div class="api-key-icon">🔑</div>
-          <div class="api-key-body">
-            <h4>Gemini API Key Required</h4>
-            <p>Get your free API key from <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer">Google AI Studio</a> — it's free with generous limits.</p>
-            <div class="api-key-input-row">
-              <input type="password" id="apiKeyInput" class="input-field" placeholder="Paste your Gemini API key here (AIza...)" autocomplete="off" aria-label="Gemini API key" />
-              <button class="btn-save" id="saveApiKey" onclick="saveApiKey()">Save Key</button>
-            </div>
-          </div>
-        </div>
-
         <!-- Platform Selector -->
         <div class="gen-label">1. Select Platform</div>
         <div class="platform-grid" id="platformGrid" role="radiogroup" aria-label="Social media platform">
@@ -1792,7 +1779,7 @@
     document.addEventListener('DOMContentLoaded', () => {
       if (apiKey) {
         const input = document.getElementById('apiKeyInput');
-        input.value = apiKey;
+        input.value = AIzaSyAjUIiZo6CtIfOoXqpV6pg3Ws3bSe0TNZE;
         input.type = 'password';
       }
       animateHeroHashtags();
